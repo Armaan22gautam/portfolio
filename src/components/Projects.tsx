@@ -1,3 +1,7 @@
+"use client";
+
+import { GlowingEffect } from "@/components/ui/glowing-effect";
+
 export default function Projects() {
   const projects = [
     {
@@ -62,8 +66,18 @@ export default function Projects() {
             <a
               key={project.id}
               href={project.link}
-              className="group bg-slate-800 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-500 transition hover:shadow-lg hover:shadow-cyan-500/20"
+              className="group relative bg-slate-800 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-500 transition"
             >
+              <GlowingEffect
+                spread={40}
+                glow={false}
+                disabled={false}
+                proximity={64}
+                inactiveZone={0.01}
+                borderWidth={2}
+                className="opacity-50"
+              />
+
               {/* Project Image */}
               <div className="h-48 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center overflow-hidden">
                 <div className="text-gray-400 group-hover:text-cyan-400 transition text-center">

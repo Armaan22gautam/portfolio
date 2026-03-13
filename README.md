@@ -1,22 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern, responsive portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Features hero section, tech skills showcase, projects gallery, certifications, resume, and contact form.
+
+## Features
+
+- 🎨 Modern dark theme with cyan accents
+- 📱 Fully responsive design
+- ⚡ Fast performance with Next.js 14
+- 🎯 Smooth scroll navigation
+- 📧 Contact form
+- 🏆 Certifications showcase
+- 💼 Projects gallery
+- 🎓 Resume section
+- 🔗 Social media links
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main portfolio page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── Hero.tsx            # Hero/introduction section
+│   ├── TechSkills.tsx      # Technical skills showcase
+│   ├── SoftSkills.tsx      # Soft skills section
+│   ├── Projects.tsx        # Featured projects
+│   ├── Certifications.tsx  # Certifications showcase
+│   ├── Resume.tsx          # Resume section
+│   ├── Contact.tsx         # Contact form
+│   └── Footer.tsx          # Footer section
+public/
+├── images/                 # Add your images here
+└── certificates/           # Add your certificate images here
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
+### Installation
+
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) to view the portfolio
+
+## Customization
+
+### Personal Information
+
+Update the following files with your information:
+
+- **Hero.tsx**: Update name, location, and intro text
+- **TechSkills.tsx**: Add your tech stack
+- **SoftSkills.tsx**: Update your soft skills
+- **Projects.tsx**: Add your featured projects
+- **Certifications.tsx**: Add your certificates
+- **Resume.tsx**: Add resume link and update content
+- **Contact.tsx**: Update contact information
+- **Footer.tsx**: Update social links
+
+### Adding Images
+
+1. Add profile image to `public/images/`
+2. Add project screenshots to `public/images/`
+3. Add certificate images to `public/certificates/`
+4. Update component imports to use your images
+
+### Adding Resume
+
+Place your resume PDF in the `public/` folder and update the link in Resume.tsx
+
+### Colors & Styling
+
+The portfolio uses a cyan/slate color scheme. Edit color values in component className attributes to customize the theme.
+
+## Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com)
+3. Import your repository
+4. Click Deploy
+
+### Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
+
+---
+
+**Made with ❤️ using Next.js, TypeScript & Tailwind CSS**
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

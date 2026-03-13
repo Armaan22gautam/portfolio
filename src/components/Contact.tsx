@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -44,26 +45,26 @@ export default function Contact() {
                 <div>
                   <p className="text-gray-400 text-sm font-semibold mb-2">Email</p>
                   <a
-                    href="mailto:your.email@example.com"
+                    href="mailto:armaangautm001@gmail.com"
                     className="text-cyan-400 hover:text-cyan-300 transition text-lg"
                   >
-                    your.email@example.com
+                    armaangautm001@gmail.com
                   </a>
                 </div>
 
                 <div>
                   <p className="text-gray-400 text-sm font-semibold mb-2">Phone</p>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+918847466235"
                     className="text-cyan-400 hover:text-cyan-300 transition text-lg"
                   >
-                    +1 (234) 567-890
+                    +91 8847466235
                   </a>
                 </div>
 
                 <div>
                   <p className="text-gray-400 text-sm font-semibold mb-2">Location</p>
-                  <p className="text-cyan-400 text-lg">Your City, Country</p>
+                  <p className="text-cyan-400 text-lg">Ropar, Punjab</p>
                 </div>
               </div>
             </div>
@@ -73,36 +74,38 @@ export default function Contact() {
               <h3 className="text-xl font-bold text-white mb-4">Follow Me</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/Armaan22gautam"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-slate-700 hover:bg-cyan-500 flex items-center justify-center transition text-white"
+                  className="w-12 h-12 rounded-full bg-slate-700 hover:bg-cyan-500 flex items-center justify-center transition text-white font-bold"
                 >
                   GH
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://linkedin.com/in/armaan-gautam-936a43297/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-slate-700 hover:bg-cyan-500 flex items-center justify-center transition text-white"
+                  className="w-12 h-12 rounded-full bg-slate-700 hover:bg-cyan-500 flex items-center justify-center transition text-white font-bold"
                 >
                   LI
-                </a>
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-slate-700 hover:bg-cyan-500 flex items-center justify-center transition text-white"
-                >
-                  TW
                 </a>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
+          <div className="relative">
+            <GlowingEffect
+              spread={40}
+              glow={false}
+              disabled={false}
+              proximity={64}
+              inactiveZone={0.01}
+              borderWidth={2}
+              className="opacity-50"
+            />
+            <form onSubmit={handleSubmit} className="relative space-y-6 bg-slate-800/50 p-8 rounded-lg border border-slate-700/50">
+              <div>
               <label htmlFor="name" className="block text-white font-semibold mb-2">
                 Name
               </label>
@@ -156,7 +159,8 @@ export default function Contact() {
             >
               Send Message
             </button>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </section>

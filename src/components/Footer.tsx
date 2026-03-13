@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-2">Your Name</h3>
+            <h3 className="text-2xl font-bold text-white mb-2">Armaan Gautam</h3>
             <p className="text-gray-400">Full-stack developer & AI enthusiast</p>
           </div>
 
@@ -37,14 +37,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4">Connect</h4>
             <div className="flex gap-4">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">
+              <a href="https://github.com/Armaan22gautam" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">
                 GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">
+              <a href="https://linkedin.com/in/armaan-gautam-936a43297/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">
                 LinkedIn
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition">
-                Twitter
               </a>
             </div>
           </div>

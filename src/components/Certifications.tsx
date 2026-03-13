@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 export default function Certifications() {
   const certificates = [
@@ -55,8 +56,18 @@ export default function Certifications() {
             <div
               key={cert.id}
               onClick={() => setExpandedCert(expandedCert === cert.id ? null : cert.id)}
-              className="bg-slate-900 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-500 transition cursor-pointer"
+              className="relative bg-slate-900 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-500 transition cursor-pointer"
             >
+              <GlowingEffect
+                spread={30}
+                glow={false}
+                disabled={false}
+                proximity={50}
+                inactiveZone={0.01}
+                borderWidth={1.5}
+                className="opacity-50"
+              />
+
               {/* Certificate Image */}
               <div className="h-40 bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-gray-400">
                 {cert.image}

@@ -1,3 +1,7 @@
+"use client";
+
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 text-white flex items-center justify-center px-4 sm:px-6 lg:px-8">
@@ -6,10 +10,10 @@ export default function Hero() {
         <div>
           <p className="text-lg text-cyan-400 font-semibold mb-2">Nice to meet you!</p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            I&apos;m <span className="text-cyan-400">Your Name</span>
+            I&apos;m <span className="text-cyan-400">Armaan Gautam</span>
           </h1>
           <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-            Based in [Your Location], I craft exceptional digital experiences—from scalable web applications to AI-powered solutions.
+            Based in Ropar, Punjab, I craft exceptional digital experiences—from scalable web applications to Java backend solutions.
           </p>
           <div className="flex gap-4">
             <a
@@ -29,10 +33,16 @@ export default function Hero() {
 
         {/* Image Placeholder */}
         <div className="flex items-center justify-center">
-          <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center">
-            <div className="w-72 h-72 rounded-full bg-slate-900 flex items-center justify-center text-gray-400">
-              {/* Add your profile image here */}
-              <span>Profile Image</span>
+          <div className="w-80 h-80 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center p-1">
+            <div className="w-full h-full rounded-full bg-slate-900 overflow-hidden flex items-center justify-center">
+              <Image
+                src="/images/profile.jpeg"
+                alt="Armaan Gautam"
+                width={300}
+                height={300}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
